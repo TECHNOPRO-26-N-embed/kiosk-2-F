@@ -4,12 +4,13 @@
 
 int main(void) {
     
-    char BookTitle[][100] = {"anpanman"};
+    char BookTitle[][100] = {"anpanman"};   /*データベース内書籍名*/
 
-    char BookSearch[100];
+    char BookSearch[100];   /*入力文字格納場所*/
 
-    int i = 1;
-    int choice;
+    int i = 1;     /*ループ制御用変数*/
+    int choice;   /*購入選択用変数*/
+    
 
     while (i == 1){
         /* 書籍検索ループ */
