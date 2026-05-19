@@ -28,7 +28,7 @@ int main(void){
         printf("\n           メインメニュー          \n");
         printf("\n==================================\n");
         printf("\n   [1]貸出   [2]検索   [3]ID登録   \n\n");
-        scanf("%d",&state);//１，２，３を選択
+        scanf("%d",&state);//１，２，4を選択
 
         if(state == 1){//貸出
            Loans();
@@ -36,8 +36,10 @@ int main(void){
 
         }else if(state == 3){//ID登録
             ID_Register();
-        }else{//１，２，３以外の時
-           printf("\n[1],[2],[3]を選択して下さい。\n");
+        }else if(state == 4){//状況確認
+            
+        }else{//１，２，３,４以外の時
+           printf("\n[1],[2],[3],[4]を選択して下さい。\n");
         }
     }
     return 0;
