@@ -2,9 +2,8 @@
 #include <string.h>
 
 
-int main(void) {
 
-int BookSearch(void);   /*書籍検索関数の宣言*/{
+int BookSearch0(void)   /*書籍検索関数の宣言*/{
     
     char BookTitle[][100] = {"anpanman"};   /*データベース内書籍名*/
 
@@ -40,7 +39,7 @@ int BookSearch(void);   /*書籍検索関数の宣言*/{
             } else {
                 printf("無効な選択です。数字でご回答ください。\n");
                 continue;
-                
+
             }
         } else if (strcmp(BookSearch, "OSHIMAI") == 0) {
             printf("書籍検索を終了します。\n");
@@ -51,6 +50,4 @@ int BookSearch(void);   /*書籍検索関数の宣言*/{
             printf("文字を正確に入力してください。\n\n\n");
         }
     }
-}
-    return 0;
 }
