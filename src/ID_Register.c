@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-void main(void){
+void ID_Register(void){
 
     int i=1;// ループ制御用の変数
     int ID_num=1;//会員番号の変数    
@@ -38,7 +38,7 @@ void main(void){
                     printf("でお間違いないでしょうか？(1:はい 2:訂正) > \n");
                     scanf("%d",&num2);
                     i=4;
-                    
+
                     if(num2 == 1){
                         printf("CSVファイルに保存しています。\n");
                         printf("カードを発行しています。\n");
