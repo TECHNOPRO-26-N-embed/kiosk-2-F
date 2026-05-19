@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "Loans.h"
+#include "ID_Register.h"
 
 int main(void){
     int i=1;// ループ制御用の変数
@@ -34,7 +35,7 @@ int main(void){
         }else if(state == 2){//検索
 
         }else if(state == 3){//ID登録
-
+            ID_Register();
         }else{//１，２，３以外の時
            printf("\n[1],[2],[3]を選択して下さい。\n");
         }
