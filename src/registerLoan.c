@@ -10,7 +10,7 @@ static int isUserIDInFile(const char *inputUserID)
 	FILE *userFile;
 	char line[256];
 
-	userFile = fopen("src/user_input_log.csv", "r");
+	userFile = fopen("data/users.csv", "r");
 	if (userFile == NULL) {
 		return -1;
 	}
@@ -424,3 +424,7 @@ AFTER_BOOK_CONFIRM:
 
 	return REGISTER_LOAN_OK;
 }
+
+/*int main(void){
+    int registerLoan(const char *userID, const char *bookCode, int period);
+}*/
