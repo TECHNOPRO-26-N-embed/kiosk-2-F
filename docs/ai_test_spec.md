@@ -10,7 +10,7 @@
 | UT-006   | processReturn(正常) | userID="U001", bookCode="B001", returnDate=2026-05-20 | 延滞料金0, 成功 |        |        |      |      |
 | UT-007   | processReturn(延滞) | userID="U001", bookCode="B001", returnDate=2026-06-10 | 延滞料金計算, 成功 |        |        |      |      |
 | UT-008   | calculateOverdueFee(正常) | loanDate=2026-05-01, returnDate=2026-05-20, period=14 | 延滞料金=250 |        |        |      | 1日50円×5日超過 |
-| UT-009   | issueUserID(正常) | name="山田太郎", phone="090...", email="a@b.com", address="東京都" | userID発行, 成功 |        |        |      |      |
+| UT-009   | issueUserID(正常) | name="山田太郎", phone="090...", email="a@b.com", address="東京都" | userID発行, 成功 | 2026/05/20 |前川　寛翔| 成功 | pushできているか     |
 | UT-010   | getBookStatus(正常) | bookCode="B001" | ステータス情報返却 |        |        |      |      |
 | UT-011   | excludeBook(正常) | bookCode="B003", reason="破損" | 成功 |        |        |      |      |
 | UT-012   | processPayment(現金) | userID="U001", amount=500, method=現金 | 成功 |        |        |      |      |
