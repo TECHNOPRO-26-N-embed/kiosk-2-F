@@ -1,0 +1,3 @@
+user_id,book_code,period_days,loan_date,status
+U000006,10000,5,2026-05-20,loaned
+U000006,10001,5,2026-05-20,loaned
