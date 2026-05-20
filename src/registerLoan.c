@@ -424,8 +424,3 @@ AFTER_BOOK_CONFIRM:
 
 	return REGISTER_LOAN_OK;
 }
-
-int main(void)
-{
-	return registerLoan(NULL, NULL, 0);
-}
