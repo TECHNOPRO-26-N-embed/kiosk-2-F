@@ -1,6 +1,10 @@
 #include <stdio.h>
 #include <string.h>
 
+int registerLoan();
+
+int main(void){
+
 void searchBook(void)
 {
 	char bookName[128];
@@ -8,6 +12,7 @@ void searchBook(void)
 	int choice;
 
     /* 書籍検索初期ループ */
+
 
 	while (1) {
 		FILE *fp;
@@ -89,4 +94,7 @@ void searchBook(void)
 			printf("書籍が見つかりませんでした\n");
 		}
 	}
+}
+
+return 0;
 }
