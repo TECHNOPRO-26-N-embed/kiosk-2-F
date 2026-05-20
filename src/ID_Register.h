@@ -1,1 +1,0 @@
-void ID_Register(void);
