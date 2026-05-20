@@ -431,6 +431,12 @@ AFTER_BOOK_CONFIRM:
 	return REGISTER_LOAN_OK;
 }
 
-/*int main(void){
-    int registerLoan(const char *userID, const char *bookCode, int period);
-}*/
+/*単体テスト用
+int main(void) {
+	int result = registerLoan(NULL, NULL, 0);
+	if (result != 0) {
+		printf("貸出登録に失敗しました。\n");
+	}
+	return 0;
+}
+*/
