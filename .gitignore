@@ -49,5 +49,5 @@ yarn-error.log*
 *.swo
 
 # Project Specific (Frontend 4Days)
-*.csv
+//*.csv
 # .csvは本研修では「顧客のレシート・ログ」の個人情報ファイルとして扱うため、Git管理から除外します。
