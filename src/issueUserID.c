@@ -238,26 +238,3 @@ int issueUserID(
 	return ISSUE_USER_ID_OK;
 }
 
-int main(void) {
-	char userID[16];
-	int result;
-	// テスト用ダミー入力
-	const char *name = "ダミー六郎";
-	const char *phone = "07033445566";
-	const char *email = "dummy.rokurou@example.jp";
-	const char *address = "京都府京都市左京区";
-
-	result = issueUserID(name, phone, email, address, userID, sizeof(userID));
-
-	if (result == ISSUE_USER_ID_OK) {
-		printf("ユーザー登録成功: userID=%s\n", userID);
-	} else if (result == ISSUE_USER_ID_ALREADY_EXISTS) {
-		printf("既存ユーザー: userID=%s\n", userID);
-	} else if (result == ISSUE_USER_ID_DUPLICATE_USER) {
-		printf("電話番号またはメールが既存ユーザーと重複しています\n");
-	} else {
-		printf("エラー: %d\n", result);
-	}
-
-	return 0;
-}
