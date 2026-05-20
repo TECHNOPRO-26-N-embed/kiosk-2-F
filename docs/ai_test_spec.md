@@ -5,7 +5,7 @@
 | UT-001   | searchBook(書籍名検索) | bookName="吾輩は猫である", bookCode=NULL | 書籍情報が返る |        |        |      |      |
 | UT-002   | searchBook(書籍コード検索) | bookName=NULL, bookCode="B001" | 書籍情報が返る |        |        |      |      |
 | UT-003   | searchBook(両方NULL) | bookName=NULL, bookCode=NULL | エラー |        |        |      |      |
-| UT-004   | registerLoan(正常) | userID="U000008", bookCode="10026,10000", period=8 | 成功 | U000008,10000,8,2026-05-20,loaned | 2026-05-20 | 濱中雄基 |      |
+| UT-004   | registerLoan(正常) | userID="U000008", bookCode="10026,10000", period=8 | 貸出が完了しました。 | 2026-05-20 | 濱中雄基 |  |      |
 | UT-005   | registerLoan(貸出中) | userID="U001", bookCode="B002", period=14 | エラー |        |        |      |      |
 | UT-006   | processReturn(正常) | userID="U001", bookCode="B001", returnDate=2026-05-20 | 延滞料金0, 成功 |        |        |      |      |
 | UT-007   | processReturn(延滞) | userID="U001", bookCode="B001", returnDate=2026-06-10 | 延滞料金計算, 成功 |        |        |      |      |
