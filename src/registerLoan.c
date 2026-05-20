@@ -431,7 +431,8 @@ AFTER_BOOK_CONFIRM:
 	return REGISTER_LOAN_OK;
 }
 
-/*単体テスト用
+//単体テスト用
+
 int main(void) {
 	int result = registerLoan(NULL, NULL, 0);
 	if (result != 0) {
@@ -439,4 +440,3 @@ int main(void) {
 	}
 	return 0;
 }
-*/

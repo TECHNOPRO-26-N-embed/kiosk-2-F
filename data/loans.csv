@@ -3,3 +3,6 @@ U000006,10000,5,2026-05-20,loaned
 U000006,10001,5,2026-05-20,loaned
 user_id,book_code,period_days,loan_date,status
 U000007,10001,8,2026-05-20,loaned
+user_id,book_code,period_days,loan_date,status
+U000008,10026,8,2026-05-20,loaned
+U000008,10000,8,2026-05-20,loaned
