@@ -76,7 +76,7 @@ static int isBookCodeInFile(const char *inputBookCode)
 	FILE *bookFile;
 	char line[256];
 
-	bookFile = fopen("src/bookID.csv", "r");
+	bookFile = fopen("data/bookID.csv", "r");
 	if (bookFile == NULL) {
 		return -1;
 	}
@@ -111,7 +111,7 @@ static int getBookTitleByCode(const char *inputBookCode, char *titleOut, int tit
 	FILE *bookFile;
 	char line[256];
 
-	bookFile = fopen("src/bookID.csv", "r");
+	bookFile = fopen("data/bookID.csv", "r");
 	if (bookFile == NULL) {
 		return -1;
 	}
@@ -210,6 +210,7 @@ int registerLoan(const char *userID, const char *bookCode, int period)
 	}
 
 	/* 本コードを最大20冊まで入力 */
+
 	while (1) {
 		printf("\n本コードを入力して下さい。\n");
 		printf("期間設定に進む場合は 0 を入力して下さい。\n");
@@ -304,6 +305,7 @@ BOOK_INPUT_DONE:
 
 	goto AFTER_BOOK_CONFIRM;
 
+
 REENTER_BOOK_CODES:
 	/* 確認で「いいえ」を選んだ場合の再入力 */
 	while (1) {
@@ -346,6 +348,10 @@ REENTER_BOOK_CODES:
 			printf("これ以上は入力できません。次の工程へ進みます。\n");
 			break;
 		}
+	}
+	// 1冊も入力されていない場合は再度本コード入力に戻る
+	if (bookCount == 0) {
+		goto REENTER_BOOK_CODES;
 	}
 
 AFTER_BOOK_CONFIRM:
