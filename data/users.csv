@@ -1,0 +1,8 @@
+﻿user_id,name,phone,email,address
+U000001,テスト太郎,9012345678,test@example.com,東京都千代田区
+U000002,サンプル次郎,8011223344,sample.jiro@example.org,神奈川県横浜市西区
+U000003,テスト三郎,7099887766,saburo.test@example.net,北海道札幌市中央区
+U000004,モック四郎,5055667788,mock.sirou@example.com,愛知県名古屋市中区
+
+U000005,テスト五郎,06022334455,goro.test@example.co.jp,福岡県福岡市博多区
+U000006,ダミー六郎,07033445566,dummy.rokurou@example.jp,京都府京都市左京区

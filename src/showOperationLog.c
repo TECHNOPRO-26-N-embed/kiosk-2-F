@@ -77,16 +77,16 @@ void showOperationLog(const char *userID,
 		safeErrorDetail = (errorDetail != NULL && errorDetail[0] != '\0') ? errorDetail : "未指定";
 	}
 
-	// userIDがNULL/空ならUNKNOWNを使う
-	safeUserID = (userID != NULL && userID[0] != '\0') ? userID : "UNKNOWN";
-	// scanf入力がNULL/空ならN/Aを使う
-	safeScanfInput = (scanfInput != NULL && scanfInput[0] != '\0') ? scanfInput : "N/A";
-	// printf出力がNULL/空ならN/Aを使う
-	safePrintfOutput = (printfOutput != NULL && printfOutput[0] != '\0') ? printfOutput : "N/A";
-	// 変更前ステータスがNULL/空ならN/Aを使う
-	safeBookStatusBefore = (bookStatusBefore != NULL && bookStatusBefore[0] != '\0') ? bookStatusBefore : "N/A";
-	// 変更後ステータスがNULL/空ならN/Aを使う
-	safeBookStatusAfter = (bookStatusAfter != NULL && bookStatusAfter[0] != '\0') ? bookStatusAfter : "N/A";
+	// userIDがNULL/空なら空文字を使う
+	safeUserID = (userID != NULL && userID[0] != '\0') ? userID : "";
+	// scanf入力がNULL/空なら空文字を使う
+	safeScanfInput = (scanfInput != NULL && scanfInput[0] != '\0') ? scanfInput : "";
+	// printf出力がNULL/空なら空文字を使う
+	safePrintfOutput = (printfOutput != NULL && printfOutput[0] != '\0') ? printfOutput : "";
+	// 変更前ステータスがNULL/空なら空文字を使う
+	safeBookStatusBefore = (bookStatusBefore != NULL && bookStatusBefore[0] != '\0') ? bookStatusBefore : "";
+	// 変更後ステータスがNULL/空なら空文字を使う
+	safeBookStatusAfter = (bookStatusAfter != NULL && bookStatusAfter[0] != '\0') ? bookStatusAfter : "";
 
 	/* 操作日時はログ出力時点の現在時刻を本関数内で生成する。 */
 	// 現在時刻を取得
